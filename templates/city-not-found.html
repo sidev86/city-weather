@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Not Found</title>
+    <title>Meteo Città</title>
     <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <h1>City Not Found</h1>
-    <h2>Try Again?</h2>
+    <h1>Città non trovata</h1>
+    <h2>Ritenta?</h2>
     <form action="/weather">
-        <input type="text" name="city" id ="city" placeholder="Enter City Name" />
-        <button type="submit">Get Weather</button>
+        <input type="text" name="city" id ="city" placeholder="Inserisci città" />
+        <button type="submit">Invia</button>
     </form>
 </body>
 </html>

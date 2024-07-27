@@ -12,6 +12,10 @@ def translate_weather_state(weather_data):
         status = "nuvoloso"
     elif weather == "shower rain":
         status = "pioggia a rovesci"
+    elif weather == "moderate rain":
+        status = "pioggia moderata"
+    elif weather == "light rain":
+        status = "lieve pioggia"
     elif weather == "thunderstorm":
         status = "temporale"
     elif weather == "snow":

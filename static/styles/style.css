@@ -16,7 +16,7 @@ body {
     font-size: 2rem;
 }
 
-h1, p{
+h1,h2, p{
     margin-bottom: 2rem; 
     text-align: center;
 }
@@ -24,13 +24,14 @@ h1, p{
 input, button {
     font-size: 2rem;
     padding: 1rem;
-    border-radius: 10px; /* Arrotonda gli angoli */
+    border-radius: 10px;
+    align-items: center;
 }
 
 .button-container {
     display: flex;
-    align-items: center; /* Allinea verticalmente al centro */
-    gap: 1rem; /* Spazio tra input e button */
+    align-items: center; 
+    gap: 1rem; 
 }
 
 @media (max-width: 600px) {
@@ -39,12 +40,13 @@ input, button {
     }
 
     .button-container {
-        flex-direction: column; /* Imposta a colonna su schermi piccoli */
-        align-items: center; /* Centra gli elementi orizzontalmente */
+        flex-direction: column;
+        align-items: center; 
     }
 
     input, button {
-        width: 100%; /* Opzionale: rende gli input e i button larghi quanto il contenitore */
+        width: 100%;
         margin-bottom: 1rem;
+        align-items: center;
     }
 }
