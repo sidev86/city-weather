@@ -16,8 +16,35 @@ body {
     font-size: 2rem;
 }
 
+h1, p{
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
 input, button {
     font-size: 2rem;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 10px; /* Arrotonda gli angoli */
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente al centro */
+    gap: 1rem; /* Spazio tra input e button */
+}
+
+@media (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+    .button-container {
+        flex-direction: column; /* Imposta a colonna su schermi piccoli */
+        align-items: center; /* Centra gli elementi orizzontalmente */
+    }
+
+    input, button {
+        width: 100%; /* Opzionale: rende gli input e i button larghi quanto il contenitore */
+        margin-bottom: 1rem;
+    }
 }
