@@ -9,6 +9,8 @@ def translate_weather_state(weather_data):
     elif weather == "scattered clouds":
         status = "nuvole sparse"
     elif weather == "broken clouds":
+        status = "parz. nuvoloso"
+    elif weather == "overcast clouds":
         status = "nuvoloso"
     elif weather == "shower rain":
         status = "pioggia a rovesci"
